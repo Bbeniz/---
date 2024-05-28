@@ -1,9 +1,9 @@
 module.exports = {
   config: {
     name: "uptime",
-aliases: ["upt"],
+    aliases: ["upt", "up"],
     version: "1.0",
-    author: "OtinXSandip",
+    author: "le vide",
     role: 0,
     shortDescription: {
       en: "Displays the total number of users of the bot and check uptime "
@@ -11,24 +11,26 @@ aliases: ["upt"],
     longDescription: {
       en: "Displays the total number of users who have interacted with the bot and check uptime."
     },
-    category: "box chat",
+    category: "system",
     guide: {
       en: "Use {p}totalusers to display the total number of users of the bot and check uptime."
     }
   },
   onStart: async function ({ api, event, args, usersData, threadsData }) {
     try {
-      const allUsers = await usersData.getAll();
-      const allThreads = await threadsData.getAll();
       const uptime = process.uptime();
-
-      const hours = Math.floor(uptime / 3600);
+      
+      const days = Math.floor(uptime / 86400);
+      const hours = Math.floor((uptime % 86400) / 3600);
       const minutes = Math.floor((uptime % 3600) / 60);
       const seconds = Math.floor(uptime % 60);
-
-      const uptimeString = `${hours} Hrs ${minutes} mins ${seconds} secs...`;
-
-      api.sendMessage(`⚡𝗔𝗜⚡𝗔𝗖𝗧𝗜𝗩𝗘⚡旦「⚡𝐎𝐍𝐋𝐈𝐍𝐄⚡」\n ${uptimeString}`, event.threadID);
+      
+      const uptimeString = `🧿✨${days} 𝐝𝐚𝐲𝐬🧿, 
+🧿✨${hours} 𝐡𝐨𝐮𝐫𝐬✨🧿, 
+🧿✨${minutes} 𝐦𝐢𝐧𝐮𝐭𝐞𝐬✨🧿, 
+🧿✨${seconds} 𝐬𝐞𝐜𝐨𝐧𝐝𝐬✨🧿`;
+      
+      api.sendMessage(`🌍 | 𝐵𝑜𝑡 𝑟𝑢𝑛𝑛𝑖𝑛𝑔 𝑡𝑖𝑚𝑒\ ${uptimeString}`, event.threadID);
     } catch (error) {
       console.error(error);
       api.sendMessage("An error occurred while retrieving data.", event.threadID);
