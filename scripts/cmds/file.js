@@ -1,10 +1,10 @@
-%cmd install file.js const fs = require('fs');
+const fs = require('fs');
 
 module.exports = {
   config: {
     name: "file",
     version: "1.0",
-    author: "☢",
+    author: "𝐙𝐞𝐧𝐢𝐥𝐝",
     countDown: 10,
     role: 0,
     shortDescription: "Send bot script",
@@ -15,7 +15,7 @@ module.exports = {
 
   onStart: async function ({ message, args, api, event }) {
     const permission = ["100084918384589"];                         if (!permission.includes(event.senderID)) {
-      return api.sendMessage("✰ 𝐭𝐮 𝐧𝐞 𝐩𝐚𝐬 𝐚𝐮𝐭𝐨𝐫𝐢𝐬𝐞𝐫 𝐚 𝐮𝐭𝐢𝐥𝐢𝐬𝐞𝐳 𝐜𝐞𝐭𝐭𝐞 𝐜𝐦𝐝 ☢ ", event.threadID, event.messageID);
+      return api.sendMessage("𝐭𝐮 𝐧𝐞 𝐩𝐚𝐬 𝐦𝐨𝐧 𝐦𝐚𝐢𝐭𝐫𝐞 𝐬𝐞𝐮𝐥 𝐥𝐮𝐢 𝐪𝐮𝐢 𝐩𝐞𝐮𝐭 𝐮𝐬𝐞 𝐜𝐞𝐭𝐭𝐞 𝐜𝐦𝐝 🧛🏻‍♂️", event.threadID, event.messageID);
     }
     
     const fileName = args[0];
