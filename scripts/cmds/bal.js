@@ -15,7 +15,7 @@ module.exports = {
 			vi: "   {pn}: xem số tiền của bạn"
 				+ "\n   {pn} <@tag>: xem số tiền của người được tag",
 			en: "   {pn}: view your money"
-				+ "\n   {pn} <@tag>:✰  𝐯𝐨𝐢𝐫 𝐥'𝐚𝐫𝐠𝐞𝐧𝐭 𝐝𝐞 𝐥𝐚 𝐩𝐞𝐫𝐬𝐨𝐧𝐧𝐞 𝐭𝐚𝐠𝐮é𝐞"
+				+ "\n   {pn} <@tag>:✰ 𝐯𝐨𝐢𝐫 𝐥'𝐚𝐫𝐠𝐞𝐧𝐭 𝐝𝐞 𝐥𝐚 𝐩𝐞𝐫𝐬𝐨𝐧𝐧𝐞 𝐭𝐚𝐠𝐮é𝐞"
 		}
 	},
 
@@ -25,8 +25,8 @@ module.exports = {
 			moneyOf: "%1 đang có %2$"
 		},
 		en: {
-			money: "༆ 𝐕𝐨𝐮𝐬 𝐚𝐯𝐞𝐳 《%1$💰💶》",
-			《 𝙡'𝙖𝙧𝙜𝙚𝙣𝙩 𝙙𝙚 : "%1 has %2$"
+			money: "༆ 𝐕𝐨𝐮𝐬 𝐚𝐯𝐞𝐳《%1$💰💶》",
+			《 𝙡'𝙖𝙧𝙜𝙚𝙣𝙩 𝙙𝙚: "%1 has %2$"
 		}
 	},
 
