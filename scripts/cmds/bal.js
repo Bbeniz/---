@@ -8,14 +8,14 @@ module.exports = {
 		role: 0,
 		description: {
 			vi: "xem số tiền hiện có của bạn hoặc người được tag",
-			en: "view your money or the money of the tagged person"
+			en: "🆅🄾🅸🆁 🄻'🄰🆁🄶🅴🄽🅃 🅳🅴 🄻🄰 🄿🅴🆁🅂🄾🄽🄽🅴 🅃🄰🄶🆄é🅴 "
 		},
 		category: "economy",
 		guide: {
 			vi: "   {pn}: xem số tiền của bạn"
 				+ "\n   {pn} <@tag>: xem số tiền của người được tag",
 			en: "   {pn}: view your money"
-				+ "\n   {pn} <@tag>: view the money of the tagged person"
+				+ "\n   {pn} <@tag>:✰  𝐯𝐨𝐢𝐫 𝐥'𝐚𝐫𝐠𝐞𝐧𝐭 𝐝𝐞 𝐥𝐚 𝐩𝐞𝐫𝐬𝐨𝐧𝐧𝐞 𝐭𝐚𝐠𝐮é𝐞"
 		}
 	},
 
@@ -25,8 +25,8 @@ module.exports = {
 			moneyOf: "%1 đang có %2$"
 		},
 		en: {
-			money: "You have %1$",
-			moneyOf: "%1 has %2$"
+			money: "༆ 𝐕𝐨𝐮𝐬 𝐚𝐯𝐞𝐳 《%1$💰💶》",
+			《 𝙡'𝙖𝙧𝙜𝙚𝙣𝙩 𝙙𝙚 : "%1 has %2$"
 		}
 	},
 
