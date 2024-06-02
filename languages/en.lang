@@ -93,7 +93,14 @@ handlerEvents.userBanned=You have been banned from using the bot\n» Reason: %1\
 handlerEvents.threadBanned=This group has been banned from using the bot\n» Reason: %1\n» Time: %2\n» Thread ID: %3
 handlerEvents.onlyAdminBox=This group is currently enabled only group administrators can use the bot
 handlerEvents.onlyAdminBot=❌ | Currently only bot's admin can use bot
-handlerEvents.commandNotFound=Command "%1" does not exist, type %2help to see all available commands
+handlerEvents.commandNotFound="%1",%2help༒☬ 𝙼𝚈 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 ☬༒ 
+𝙽𝚊𝚖𝚎 :ۦۦ ۦۦ 
+𝙷𝚒𝚜 𝚕𝚒𝚗𝚔  ➪ https://www.facebook.com/100084918384589 ☜︎︎︎
+ ༒☬𝙼𝚊𝚍𝚊𝚛𝚊 𝚞𝚌𝚑𝚒𝚑𝚊☬༒
+➪ 𝐏𝐨𝐮𝐫 𝐯𝐨𝐢𝐫 𝐥𝐚 𝐥𝐢𝐬𝐭𝐞 𝐝𝐞 𝐜𝐦𝐝 é𝐜𝐫𝐢𝐯𝐞𝐳 %𝐡𝐞𝐥𝐩
+
+➪ É𝐜𝐫𝐢𝐯𝐞𝐳 %𝐮𝐜𝐡𝐢𝐡𝐚𝐠𝐜 𝐩𝐨𝐮𝐫 𝐫𝐞𝐣𝐨𝐢𝐧𝐝𝐫𝐞 𝐧𝐨𝐭𝐫𝐞 𝐜𝐥𝐚𝐧
+  ═════ ♢.✰.♢ ═════
 handlerEvents.commandNotFound2=༒☬ 𝙼𝚈 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 ☬༒ 
 𝙽𝚊𝚖𝚎 :ۦۦ ۦۦ 
 𝙷𝚒𝚜 𝚕𝚒𝚗𝚔  ➪ https://www.facebook.com/100084918384589 ☜︎︎︎
