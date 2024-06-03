@@ -3,19 +3,19 @@ module.exports = {
 		name: "balance",
 		aliases: ["bal"],
 		version: "1.2",
-		author: "NTKhang",
+		author: "ben",
 		countDown: 5,
 		role: 0,
 		description: {
 			vi: "xem số tiền hiện có của bạn hoặc người được tag",
-			en: "🆅🄾🅸🆁 🄻'🄰🆁🄶🅴🄽🅃 🅳🅴 🄻🄰 🄿🅴🆁🅂🄾🄽🄽🅴 🅃🄰🄶🆄é🅴 "
+			en: "view your money or the money of the tagged person"
 		},
 		category: "economy",
 		guide: {
 			vi: "   {pn}: xem số tiền của bạn"
-				+ "\n   {pn} <@tag>: xem số tiền của người được tag",
+				+ "\   {pn} <@tag>: xem số tiền của người được tag",
 			en: "   {pn}: view your money"
-				+ "\n   {pn} <@tag>:✰ 𝐯𝐨𝐢𝐫 𝐥'𝐚𝐫𝐠𝐞𝐧𝐭 𝐝𝐞 𝐥𝐚 𝐩𝐞𝐫𝐬𝐨𝐧𝐧𝐞 𝐭𝐚𝐠𝐮é𝐞"
+				+ "\   {pn} <@tag>: view the money of the tagged person"
 		}
 	},
 
@@ -25,8 +25,8 @@ module.exports = {
 			moneyOf: "%1 đang có %2$"
 		},
 		en: {
-			money: "༆ 𝐕𝐨𝐮𝐬 𝐚𝐯𝐞𝐳 %1$💰💶",
-			𝙡'𝙖𝙧𝙜𝙚𝙣𝙩 𝙙𝙚: "%1 has %2$"
+			money: "💰| 𝘛'𝘢𝘴 𝘶𝘯𝘦 𝘴𝘰𝘮𝘮𝘦 𝘥𝘦 %1€ sur 𝘵𝘰𝘯 𝘤𝘰𝘮𝘱𝘵𝘦",
+			moneyOf: "%1 𝙰 %2$"
 		}
 	},
 
@@ -36,7 +36,7 @@ module.exports = {
 			let msg = "";
 			for (const uid of uids) {
 				const userMoney = await usersData.get(uid, "money");
-				msg += getLang("moneyOf", event.mentions[uid].replace("@", ""), userMoney) + '\n';
+				msg += getLang("moneyOf", event.mentions[uid].replace("@", ""), userMoney) + '\';
 			}
 			return message.reply(msg);
 		}
