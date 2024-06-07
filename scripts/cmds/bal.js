@@ -3,7 +3,7 @@ module.exports = {
 		name: "balance",
 		aliases: ["bal"],
 		version: "1.2",
-		author: "ben",
+		author: "NTKhang",
 		countDown: 5,
 		role: 0,
 		description: {
@@ -13,9 +13,9 @@ module.exports = {
 		category: "economy",
 		guide: {
 			vi: "   {pn}: xem số tiền của bạn"
-				+ "\   {pn} <@tag>: xem số tiền của người được tag",
+				+ "\n   {pn} <@tag>: xem số tiền của người được tag",
 			en: "   {pn}: view your money"
-				+ "\   {pn} <@tag>: view the money of the tagged person"
+				+ "\n   {pn} <@tag>: view the money of the tagged person"
 		}
 	},
 
@@ -25,7 +25,7 @@ module.exports = {
 			moneyOf: "%1 đang có %2$"
 		},
 		en: {
-			money: "💰| 𝘛'𝘢𝘴 𝘶𝘯𝘦 𝘴𝘰𝘮𝘮𝘦 𝘥𝘦 %1€ sur 𝘵𝘰𝘯 𝘤𝘰𝘮𝘱𝘵𝘦",
+			money: "________________________\n✰𝐯𝐨𝐮𝐬 𝐚𝐯𝐞𝐳 [ %1¥] 𝐝𝐚𝐧𝐬 𝐯𝐨𝐭𝐫𝐞 𝐜𝐨𝐦𝐩𝐭𝐞 💴\n______________________",
 			moneyOf: "%1 𝙰 %2$"
 		}
 	},
@@ -36,7 +36,7 @@ module.exports = {
 			let msg = "";
 			for (const uid of uids) {
 				const userMoney = await usersData.get(uid, "money");
-				msg += getLang("moneyOf", event.mentions[uid].replace("@", ""), userMoney) + '\';
+				msg += getLang("moneyOf", event.mentions[uid].replace("@", ""), userMoney) + '\n';
 			}
 			return message.reply(msg);
 		}
