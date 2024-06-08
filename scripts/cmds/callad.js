@@ -27,7 +27,7 @@ module.exports = {
 			content: "\n\nNội dung:\n✇═❦═•| ۞ |•═❦═✇\n%1\n─✇═❦═•| ༄ |•═❦═✇\nPhản hồi tin nhắn này để gửi tin nhắn về người dùng",
 			success: "Đã gửi tin nhắn của bạn về %1 admin thành công!\n%2",
 			failed: "Đã có lỗi xảy ra khi gửi tin nhắn của bạn về %1 admin\n%2\nKiểm tra console để biết thêm chi tiết",
-			reply: "📍 Phản hồi từ admin %1:\n✇═❦═•| ☆ |•═❦═✇\n%2\n✇═❦═•| ✵ |•═❦═✇\nPhản hồi tin nhắn này để tiếp tục gửi tin nhắn về admin",
+			reply: "🕹 Phản hồi từ admin %1:\n✇═❦═•| ☆ |•═❦═✇\n%2\n✇═❦═•| ✵ |•═❦═✇\nPhản hồi tin nhắn này để tiếp tục gửi tin nhắn về admin",
 			replySuccess: "Đã gửi phản hồi của bạn về admin thành công!",
 			feedback: "📝 Phản hồi từ người dùng %1:\n- User ID: %2%3\n\nNội dung:\n✇═❦═•| ☢ |•═❦═✇\n%4\n✇═❦═•| ☢ |•═❦═✇\nPhản hồi tin nhắn này để gửi tin nhắn về người dùng",
 			replyUserSuccess: "Đã gửi phản hồi của bạn về người dùng thành công!",
