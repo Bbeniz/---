@@ -26,12 +26,12 @@ module.exports = {
       const seconds = Math.floor(uptime % 60);
       
       const uptimeString = `➪🔋${days} 𝐝𝐚𝐲𝐬🪫
-━━━━━━━━━━━\n 
-➪🔋${hours} 𝐡𝐨𝐮𝐫𝐬🪫━━━━━━━━━━━\n 
-➪🔋${minutes} 𝐦𝐢𝐧𝐮𝐭𝐞𝐬🪫━━━━━━━━━━━\n 
-➪🔋${seconds} 𝐬𝐞𝐜𝐨𝐧𝐝𝐬🪫━━━━━━━━━━━`;
+\n━━━━━━━━━━━━━━━━\n 
+➪🔋${hours} 𝐡𝐨𝐮𝐫𝐬🪫\n━━━━━━━━━━━━━━━━━━━━━\n 
+➪🔋${minutes} 𝐦𝐢𝐧𝐮𝐭𝐞𝐬🪫\n━━━━━━━━━━━━━━━━━━━━━━\n 
+➪🔋${seconds} 𝐬𝐞𝐜𝐨𝐧𝐝𝐬🪫\n━━━━━━━━━━━━━━━━━━━━━━━━`;
       
-      api.sendMessage(`🌍 | ✰𝐓𝐞𝐦𝐩𝐬 𝐝𝐞𝐬 𝐚𝐫𝐜𝐚𝐧𝐞𝐬 𝐥𝐮𝐧𝐚𝐢𝐫𝐞𝐬 𝐢𝐧𝐟𝐢𝐧𝐢𝐬\n━━━━━━━━━━━━━━━━\n ${uptimeString}`, event.threadID);
+      api.sendMessage(`━━━━━━━━━━━━━━━━━━━━━\n🌍 | ✰𝐓𝐞𝐦𝐩𝐬 𝐝𝐞𝐬 𝐚𝐫𝐜𝐚𝐧𝐞𝐬 𝐥𝐮𝐧𝐚𝐢𝐫𝐞𝐬 𝐢𝐧𝐟𝐢𝐧𝐢𝐬\n━━━━━━━━━━━━━━━━━━━━━━━━━━━\n ${uptimeString}`, event.threadID);
     } catch (error) {
       console.error(error);
       api.sendMessage("An error occurred while retrieving data.", event.threadID);
