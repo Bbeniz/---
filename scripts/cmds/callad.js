@@ -34,16 +34,16 @@ module.exports = {
 			noAdmin: "Hiện tại bot chưa có admin nào"
 		},
 		en: {
-			missingMessage: "Please enter the message you want to send to admin",
+			missingMessage: "𝚅𝚎𝚞𝚒𝚕𝚕𝚎𝚣 𝚜𝚊𝚒𝚜𝚒𝚛 𝚕𝚎 𝚖𝚎𝚜𝚜𝚊𝚐𝚎 𝚚𝚞𝚎 𝚟𝚘𝚞𝚜 𝚜𝚘𝚞𝚑𝚊𝚒𝚝𝚎𝚣 𝚎𝚗𝚟𝚘𝚢𝚎𝚛 à 𝚖𝚎𝚜 𝚌𝚑𝚎𝚏𝚜",
 			sendByGroup: "\n- Sent from group: %1\n- Thread ID: %2",
 			sendByUser: "\n- Sent from user",
-			content: "\n\nContent:\n✇═❦═•| ☼ |•═❦═✇\n%1\n✇═❦═•| ☼ |•═❦═✇\nReply this message to send message to user",
-			success: "Sent your message to %1 admin successfully!\n%2",
+			content: "\n\n𝐂𝐨𝐧𝐭𝐞𝐧𝐭:\n✇═❦═•| ☼ |•═❦═✇\n%1\n✇═❦═•| ☼ |•═❦═✇\n𝐑𝐞𝐩𝐥𝐲 𝐭𝐡𝐢𝐬 𝐦𝐞𝐬𝐬𝐚𝐠𝐞 𝐭𝐨 𝐬𝐞𝐧𝐝 𝐦𝐞𝐬𝐬𝐚𝐠𝐞 𝐭𝐨 𝐮𝐬𝐞𝐫",
+			success: "𝐒𝐞𝐧𝐭 𝐲𝐨𝐮𝐫 𝐦𝐞𝐬𝐬𝐚𝐠𝐞 𝐭𝐨 %1 𝐚𝐝𝐦𝐢𝐧 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲!\n%2",
 			failed: "An error occurred while sending your message to %1 admin\n%2\nCheck console for more details",
-			reply: "✰ 𝐦𝐞𝐬𝐬𝐚𝐠𝐞 𝐝𝐞 𝐥'𝐚𝐝𝐦𝐢𝐧 %1:\n✇═❦═•| ✰ |•═❦═✇\n%2\n✇═❦═•| ✰ |•═❦═✇\nReply this message to continue send message to admin",
-			replySuccess: "Sent your reply to admin successfully!",
-			feedback: "📝 Feedback from user %1:\n- User ID: %2%3\n\nContent:\n✇═❦═•| ☢ |•═❦═✇\n%4\n✇═❦═•| ☢ |•═❦═✇\nReply this message to send message to user",
-			replyUserSuccess: "Sent your reply to user successfully!",
+			reply: "✰ 𝐦𝐞𝐬𝐬𝐚𝐠𝐞 𝐝𝐞 𝐥'𝐚𝐝𝐦𝐢𝐧 %1:\n✇═❦═•| ✰ |•═❦═✇\n%2\n✇═❦═•| ✰ |•═❦═✇\n𝚁𝚎𝚙𝚕𝚢 𝚝𝚑𝚒𝚜 𝚖𝚎𝚜𝚜𝚊𝚐𝚎 𝚝𝚘 𝚌𝚘𝚗𝚝𝚒𝚗𝚞𝚎 𝚜𝚎𝚗𝚍 message 𝚝𝚘 𝚊𝚍𝚖𝚒𝚗",
+			replySuccess: "🗳✔",
+			feedback: "📝 𝐅𝐞𝐞𝐝𝐛𝐚𝐜𝐤 𝐟𝐫𝐨𝐦 𝐮𝐬𝐞𝐫 %1:\n- 𝐔𝐬𝐞𝐫 𝐈𝐃: %2%3\n\n𝐂𝐨𝐧𝐭𝐞𝐧𝐭:\n✇═❦═•|❀|•═❦═✇\n%4\n✇═❦═•| ☢ |•═❦═✇\n𝐑𝐞𝐩𝐥𝐲 𝐭𝐡𝐢𝐬 𝐦𝐞𝐬𝐬𝐚𝐠𝐞 𝐭𝐨 𝐬𝐞𝐧𝐝 𝐦𝐞𝐬𝐬𝐚𝐠𝐞 𝐭𝐨 𝐮𝐬𝐞𝐫",
+			replyUserSuccess: "📥✔",
 			noAdmin: "Bot has no admin at the moment"
 		}
 	},
@@ -56,7 +56,7 @@ module.exports = {
 		if (config.adminBot.length == 0)
 			return message.reply(getLang("noAdmin"));
 		const senderName = await usersData.getName(senderID);
-		const msg = "==📨 CALL ADMIN 📨=="
+		const msg = "==📬 𝙲𝙰𝙻𝙻 𝙰𝙳𝙼𝙸𝙽 📬=="
 			+ `\n- User Name: ${senderName}`
 			+ `\n- User ID: ${senderID}`
 			+ (isGroup ? getLang("sendByGroup", (await threadsData.get(threadID)).threadName, threadID) : getLang("sendByUser"));
