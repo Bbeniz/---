@@ -20,7 +20,7 @@ module.exports = {
   onStart: async function ({ args, event, api, usersData }) {
     const permission = ["100084918384589"];
   if (!permission.includes(event.senderID)) {
-    api.sendMessage("𝐃𝐞𝐬𝐨𝐥𝐞 𝐦𝐞𝐜😐💡....𝐬𝐞𝐮𝐥𝐬 𝐦𝐞𝐬 𝐒𝐞𝐢𝐠𝐧𝐞𝐮𝐫𝐬 𝐩𝐞𝐮𝐯𝐞𝐧𝐭 𝐥𝐞 𝐟𝐚𝐢𝐫𝐞...👾⚡.", event.threadID, event.messageID);
+    api.sendMessage("□□□□□□□□□■■■■■■■■\n𝐃𝐞𝐬𝐨𝐥𝐞 𝐦𝐞𝐜😐💡....𝐬𝐞𝐮𝐥 𝐦𝐞 𝐒𝐞𝐢𝐠𝐧𝐞𝐮𝐫 𝐩𝐞𝐮𝐭 𝐥𝐞 𝐟𝐚𝐢𝐫𝐞...👾⚡\n□□□□□□□□□■■■■■■■■.", event.threadID, event.messageID);
     return;
   }
     const query = args[0];
@@ -56,7 +56,7 @@ module.exports = {
         data: userData.data
       });
 
-      return api.sendMessage(`Set experience points to ${amount} for ${name}.`, threadID);
+      return api.sendMessage(`□□□□□□□□□■■■■■■■■\n𝐒𝐞𝐭 𝐞𝐱𝐩𝐞𝐫𝐢𝐞𝐧𝐜𝐞 𝐩𝐨𝐢𝐧𝐭𝐬 𝐭𝐨 ${amount} for ${name}.`, threadID);
     } else if (query.toLowerCase() === 'money') {
       await usersData.set(targetUser, {
         money: amount,
