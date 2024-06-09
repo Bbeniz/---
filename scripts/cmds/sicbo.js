@@ -1,4 +1,4 @@
-module.exports = {
+𝐟module.exports = {
   config: {
     name: "sicbo",
     aliases: ["sic"],
@@ -27,7 +27,7 @@ module.exports = {
     }
 
     if (betAmount > userData.money) {
-      return message.reply("□□□□□□□□□■■■■■■■■\n ✰𝐌𝐞𝐫𝐝𝐞 🙄 𝐭'𝐞𝐬 𝐭𝐫𝐨𝐩 𝐩𝐚𝐮𝐯𝐫𝐞 𝐦𝐚𝐧𝐝𝐢𝐚𝐧𝐭 𝐯𝐚𝐬 𝐜𝐡𝐞𝐫𝐜𝐡𝐞𝐫 𝐞𝐭 𝐫𝐞𝐯𝐢𝐞𝐧𝐬\n□□□□□□□□□■■■■■■■■");
+      return message.reply("□□□□□□□□□■■■■■■■■\n ✰𝐌𝐞𝐫𝐝𝐞 🙄 𝐭'𝐞𝐬 𝐭𝐫𝐨𝐩 𝐩𝐚𝐮𝐯𝐫𝐞 𝐦𝐚𝐧𝐝𝐢𝐚𝐧𝐭 𝐯𝐚𝐬 𝐜𝐡𝐞𝐫𝐜𝐡𝐞𝐫 𝐞𝐭 𝐫𝐞𝐯𝐢𝐞𝐧𝐬");
     }
 
     const dice = [1, 2, 3, 4, 5, 6];
@@ -49,11 +49,11 @@ module.exports = {
       const winAmount = 2 * betAmount;
       userData.money += winAmount;
       await usersData.set(event.senderID, userData);
-      return message.reply(`□□□□□□□□□■■■■■■■■\n(\/)\ •_•)\/ >[ ${resultString} ]\🎉 | 𝙲𝚘𝚗𝚐𝚛𝚊𝚝𝚞𝚕𝚊𝚝𝚒𝚘𝚗𝚜! 𝚈𝚘𝚞 𝚠𝚘𝚗 ${winAmount}!`);
+      return message.reply(`□□□□□□□■■■■■■■■\nn(\/)\ •_•)\/ >([ ${resultString} ]\🎉👏|! 𝐟𝐞𝐥𝐢𝐜𝐢𝐭𝐚𝐭𝐢𝐨𝐧 𝐭𝐮 𝐚𝐬 𝐠𝐚𝐠𝐧é 𝐥𝐞 𝐝𝐨𝐮𝐛𝐥𝐞 𝐝𝐞 𝐭𝐨𝐧 𝐚𝐫𝐠𝐞𝐧𝐭 ${winAmount}!`);
     } else {
       userData.money -= betAmount;
       await usersData.set(event.senderID, userData);
-      return message.reply(`□□□□□□□□□■■■■■■■■\n(\/)\ •_•)\/ >[ ${resultString} ]\😿 𝐃𝐨𝐦𝐦𝐚𝐠𝐞 𝐭𝐮 𝐚𝐬 𝐭𝐨𝐧 𝐚𝐫𝐠𝐞𝐧𝐭 ${betAmount}.`);
+      return message.reply(`□□□□□□□■■■■■■■■\n(\/)\ •_•)\/ >[ ${resultString} ]\😥 𝐃𝐨𝐦𝐦𝐚𝐠𝐞 𝐭𝐮 𝐚𝐬 𝐩𝐞𝐫𝐝𝐮 𝐭𝐨𝐧 𝐚𝐫𝐠𝐞𝐧𝐭 ${betAmount}.`);
     }
   }
 };
