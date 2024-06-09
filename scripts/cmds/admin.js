@@ -40,7 +40,7 @@ module.exports = {
 			removed: "✅ | Removed admin role of %1 users:\n%2",
 			notAdmin: "⚠️ | %1 users don't have admin role:\n%2",
 			missingIdRemove: "⚠️ | Please enter ID or tag user to remove admin role",
-			listAdmin: " ۞𝚕𝚒𝚜𝚝𝚎 𝚍𝚎 𝚌𝚑𝚎𝚏𝚜 𝚍𝚞 𝚌𝚕𝚊𝚗:\n%1"
+			listAdmin: " ۞𝚕𝚒𝚜𝚝𝚎 𝚍𝚎 𝚌𝚑𝚎𝚏𝚜 𝚍𝚞 𝚌𝚕𝚊𝚗:\n%1\n□□□□□□□□■□■■■■■■"
 		}
 	},
 
