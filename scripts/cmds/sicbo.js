@@ -27,7 +27,7 @@ module.exports = {
     }
 
     if (betAmount > userData.money) {
-      return message.reply("🖕 | Merde 🙄 t'es trop pauvre mandiant .");
+      return message.reply("□□□□□□□□□■■■■■■■■\n ✰𝐌𝐞𝐫𝐝𝐞 🙄 𝐭'𝐞𝐬 𝐭𝐫𝐨𝐩 𝐩𝐚𝐮𝐯𝐫𝐞 𝐦𝐚𝐧𝐝𝐢𝐚𝐧𝐭 𝐯𝐚𝐬 𝐜𝐡𝐞𝐫𝐜𝐡𝐞𝐫 𝐞𝐭 𝐫𝐞𝐯𝐢𝐞𝐧𝐬\n□□□□□□□□□■■■■■■■■");
     }
 
     const dice = [1, 2, 3, 4, 5, 6];
@@ -49,11 +49,11 @@ module.exports = {
       const winAmount = 2 * betAmount;
       userData.money += winAmount;
       await usersData.set(event.senderID, userData);
-      return message.reply(`(\/)\ •_•)\/ >[ ${resultString} ]\🎉 | Congratulations! You won ${winAmount}!`);
+      return message.reply(`□□□□□□□□□■■■■■■■■\n(\/)\ •_•)\/ >[ ${resultString} ]\🎉 | 𝙲𝚘𝚗𝚐𝚛𝚊𝚝𝚞𝚕𝚊𝚝𝚒𝚘𝚗𝚜! 𝚈𝚘𝚞 𝚠𝚘𝚗 ${winAmount}!`);
     } else {
       userData.money -= betAmount;
       await usersData.set(event.senderID, userData);
-      return message.reply(`(\/)\ •_•)\/ >[ ${resultString} ]\😿 | You lost ${betAmount}.`);
+      return message.reply(`□□□□□□□□□■■■■■■■■\n(\/)\ •_•)\/ >[ ${resultString} ]\😿 𝐃𝐨𝐦𝐦𝐚𝐠𝐞 𝐭𝐮 𝐚𝐬 𝐭𝐨𝐧 𝐚𝐫𝐠𝐞𝐧𝐭 ${betAmount}.`);
     }
   }
 };
