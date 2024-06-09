@@ -57,7 +57,7 @@ module.exports = {
 			needAdmin: "⚠️ | Bot needs administrator permission to kick banned members",
 			noName: "Facebook user",
 			noData: "📑 | There are no banned members in this box chat",
-			listBanned: "📑 | List of banned members in this box chat (page %1/%2)",
+			listBanned: "📑 | 𝐥𝐚 𝐥𝐢𝐬𝐭𝐞 𝐝𝐞𝐬 𝐦𝐞𝐦𝐛𝐫𝐞𝐬 𝐛𝐚𝐧𝐧𝐢𝐬 𝐝𝐮 𝐯𝐢𝐥𝐥𝐚𝐠𝐞 (page %1/%2)",
 			content: "%1/ %2 (%3)\nReason: %4\nBan time: %5\n\n",
 			needAdminToKick: "⚠️ | Member %1 (%2) has been banned from box chat, but the bot does not have administrator permission to kick this member, please grant administrator permission to the bot to kick this member",
 			bannedKick: "⚠️ | %1 has been banned from box chat before!\nUID: %2\nReason: %3\nBan time: %4\n\nBot has automatically kicked this member"
