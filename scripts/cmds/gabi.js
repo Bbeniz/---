@@ -34,6 +34,21 @@ module.exports = {
 "https://i.ibb.co/HPzszSZ/image.jpg",
 "https://i.ibb.co/L97VYjf/image.jpg",
 "https://i.ibb.co/353stxw/image.jpg",
+"https://i.ibb.co/K62TbFs/image.jpg",
+"https://i.ibb.co/F7wtWz7/image.jpg",
+"https://i.ibb.co/hMGbQd3/image.jpg",
+"https://i.ibb.co/s9Z2PBP/image.jpg",
+"https://i.ibb.co/Y0BzXV4/image.jpg",
+"https://i.ibb.co/ftM4ktN/image.jpg",
+"https://i.ibb.co/1mLJ6Wy/image.jpg",
+"https://i.ibb.co/Mns2bmS/image.jpg",
+"https://i.ibb.co/Y2XwcvS/image.jpg",
+"https://i.ibb.co/yXvFfGD/image.jpg",
+"https://i.ibb.co/5G2WdHd/image.jpg",
+"https://i.ibb.co/YWn81L1/image.jpg",
+"https://i.ibb.co/mBB8RyF/image.jpg",
+"https://i.ibb.co/HxvMY30/image.jpg",
+
 
   ]
 let img = link[Math.floor(Math.random()*link.length)]
