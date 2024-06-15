@@ -3,13 +3,13 @@ const axios = require("axios");
 const path = require("path");
 const { getPrefix } = global.utils;
 const { commands, aliases } = global.GoatBot;
-const doNotDelete = "[ 𝐋𝐞𝐬 𝐚𝐫𝐜𝐚𝐧𝐞𝐬 𝐥𝐮𝐧𝐚𝐢𝐫𝐞𝐬 𝐢𝐧𝐟𝐢𝐧𝐢𝐬 ]"; // changing this wont change the goatbot V2 of list cmd it is just a decoyy
+const doNotDelete = "[𝐂𝐫𝐞𝐚𝐭𝐨𝐫 𝐥𝐢𝐧𝐤 ➪ ]"; // changing this wont change the goatbot V2 of list cmd it is just a decoyy
 
 module.exports = {
   config: {
     name: "help",
     version: "1.17",
-    author: "𝐥𝐞 𝐯𝐢𝐝𝐞", // original author Kshitiz 
+    author: "𝑹𝒊𝒏𝒏𝒈𝒂𝒏", // original author Kshitiz 
     countDown: 5,
     role: 0,
     shortDescription: {
@@ -34,7 +34,7 @@ module.exports = {
       const categories = {};
       let msg = "";
 
-      msg += `\n╔═══════════════╗   𝐌𝐀𝐃𝐀𝐑𝐀 𝐔𝐂𝐇𝐈𝐇𝐀     \n`; // replace with your name 
+      msg += `\n╔═══════ - ════════╗   𝐌𝐀𝐃𝐀𝐑𝐀 𝐔𝐂𝐇𝐈𝐇𝐀     \n`; // replace with your name 
 
       for (const [name, value] of commands) {
         if (value.config.role > 1 && role < value.config.role) continue;
@@ -46,7 +46,7 @@ module.exports = {
 
       Object.keys(categories).forEach((category) => {
         if (category !== "info") {
-          msg += `\n━─────╮✰╭─────━\n│ 🌬❄➪『  ${category.toUpperCase()}  』`;
+          msg += `\n━─────╮✰╭─────━\n│ 🌬❄ ➪『  ${category.toUpperCase()}  』`;
 
 
           const names = categories[category].commands.sort();
@@ -64,9 +64,7 @@ module.exports = {
       msg += `𝑻𝑨𝑷𝑬 ${prefix} 𝐡𝐞𝐥𝐩 + 𝒏𝒐𝒎 𝒅𝒆 𝒍𝒂 𝒄𝒐𝒎𝒎𝒂𝒏𝒅𝒆 𝒑𝒐𝒖𝒓 𝒆𝒏 𝒗𝒐𝒊𝒓 𝒍𝒆𝒔 𝒊𝒏𝒇𝒐𝒔 ➪ %𝐮𝐜𝐡𝐢𝐡𝐚𝐠𝐜 ☜︎︎︎ 𝐩𝐨𝐮𝐫 𝐫𝐞𝐣𝐨𝐢𝐧𝐝𝐫𝐞 𝐦𝐨𝐧 𝐜𝐥𝐚𝐧\n\n`;
 
 
-      msg += `📜| 𝐋𝐞 𝐩𝐥𝐮𝐬 𝐠𝐫𝐚𝐧𝐝 𝐝𝐚𝐧𝐠𝐞𝐫 𝐩𝐨𝐮𝐫 𝐮𝐧 𝐯𝐢𝐥𝐥𝐚𝐠𝐞, 𝐜𝐞 n’𝐞𝐬𝐭 𝐩𝐚𝐬 𝐥𝐚 𝐠𝐮𝐞𝐫𝐫𝐞, 𝐦𝐚𝐢𝐬 𝐩𝐥𝐮𝐭ô𝐭 𝐪𝐮𝐚𝐧𝐝 𝐜𝐞𝐮𝐱 𝐪𝐮𝐢 𝐥𝐞 𝐠𝐨𝐮𝐯𝐞𝐫𝐧𝐞𝐧𝐭 𝐩𝐞𝐫𝐝𝐞𝐧𝐭 𝐥𝐞𝐮𝐫 𝐟𝐨𝐢`; \n\n
-      
-      msg +=╔═══════════════╗\n𝐂𝐫𝐞𝐚𝐭𝐨𝐫 𝐥𝐢𝐧𝐤 ➪https://www.facebook.com/100084918384589\n━─────╮•╭─────━`;// its not decoy so change it if you want 
+      msg += `📜| 𝐋𝐞 𝐩𝐥𝐮𝐬 𝐠𝐫𝐚𝐧𝐝 𝐝𝐚𝐧𝐠𝐞𝐫 𝐩𝐨𝐮𝐫 𝐮𝐧 𝐯𝐢𝐥𝐥𝐚𝐠𝐞, 𝐜𝐞 n’𝐞𝐬𝐭 𝐩𝐚𝐬 𝐥𝐚 𝐠𝐮𝐞𝐫𝐫𝐞, 𝐦𝐚𝐢𝐬 𝐩𝐥𝐮𝐭ô𝐭 𝐪𝐮𝐚𝐧𝐝 𝐜𝐞𝐮𝐱 𝐪𝐮𝐢 𝐥𝐞 𝐠𝐨𝐮𝐯𝐞𝐫𝐧𝐞𝐧𝐭 𝐩𝐞𝐫𝐝𝐞𝐧𝐭 𝐥𝐞𝐮𝐫 𝐟𝐨𝐢`; \n\n// its not decoy so change it if you want 
 
       const helpListImages = [
         "https://i.ibb.co/rQxS221/image.jpg", // add image link here
