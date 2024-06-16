@@ -4,7 +4,7 @@ module.exports = {
 aliases: ["dur"],
     version: "1.0",
     author: "𝚋𝚎𝚗",
-    role: 0,
+    role: 2,
     shortDescription: {
       en: "Displays the total number of users of the bot and check uptime "
     },
