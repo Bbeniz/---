@@ -5,7 +5,7 @@ module.exports = {
 		version: "1.0",
 		author: "ʬɸ satoru gojo ɸʬ", // do not change this credits
 		countDown: 5,
-		role: 0,
+		role: 2,
 		shortDescription: "send you pic of girls anime Hentai",
 		longDescription: "sends u pic of girls animr Hentai",
 		category: "18+",
