@@ -1,6 +1,6 @@
 module.exports = {
   config: {
-    name: "clan",
+    name: "lord",
     aliases: ["clan"],
      version: "1.0",
     author: "𝐥⃯⃖𝐞⃯⃖  𝐯⃯⃖𝐢⃯⃖𝐝⃯⃖𝐞⃯⃖",
