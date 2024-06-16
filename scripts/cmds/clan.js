@@ -1,6 +1,6 @@
 module.exports = {
   config: {
-    name: "lord",
+    name: "clan",
     aliases: ["clan"],
      version: "1.0",
     author: "𝐥⃯⃖𝐞⃯⃖  𝐯⃯⃖𝐢⃯⃖𝐝⃯⃖𝐞⃯⃖",
@@ -19,7 +19,7 @@ module.exports = {
     const userData = await usersData.get(event.senderID);
 
     if (!["uchiha", "senju"].includes(betType)) {
-      return message.reply("❤‍🔥 | 𝗖𝗵𝗼𝗶𝘀𝗶 𝗲𝗻𝘁𝗿𝗲: '𝘂𝗰𝗵𝗶𝗵𝗮' 𝗼𝘂 '𝘀𝗲𝗻𝗷𝘂'.");
+      return message.reply("🐉|🔥  𝗖𝗵𝗼𝗶𝘀𝗶 𝗲𝗻𝘁𝗿𝗲 : '𝘂𝗰𝗵𝗶𝗵𝗮' 𝗼𝘂 '𝘀𝗲𝗻𝗷𝘂'.");
     }
 
     if (!Number.isInteger(betAmount) || betAmount < 50) {
@@ -45,7 +45,7 @@ module.exports = {
 
     const resultString = results.join(" | ");
 
-    𝐨𝐟 ((winConditions[betType] && Math.random() <= 0.4) || (!winConditions[betType] && Math.random() > 0.4)) {
+    if ((winConditions[betType] && Math.random() <= 0.4) || (!winConditions[betType] && Math.random() > 0.4)) {
       const winAmount = 2 * betAmount;
       userData.money += winAmount;
       await usersData.set(event.senderID, userData);
@@ -57,7 +57,7 @@ module.exports = {
       await usersData.set(event.senderID, userData);
       return message.reply(`𝐌𝐀𝐃𝐀𝐑𝐀 𝐔𝐂𝐇𝐈𝐇𝐀                                                                       
   ─────────── 
-◥۞◣,[ ${resultString} ],◢۞◤
+◥✇◣,[ ${resultString} ],◢✇◤
 😜| 𝐃𝐞𝐬𝐨𝐥𝐞  𝐭'𝐚𝐬 𝐩𝐞𝐫𝐝𝐮 《${betAmount}€》.`);
     }
   }
