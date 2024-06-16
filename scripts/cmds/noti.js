@@ -31,7 +31,7 @@ module.exports = {
 		},
 		en: {
 			missingMessage: "Please enter the message you want to send to all groups",
-			notification: "✰𝐥𝐞 𝐜𝐡𝐞𝐟 𝐝𝐮 𝐜𝐥𝐚𝐧 𝐯𝐢𝐞𝐧𝐬 𝐝'𝐞𝐧𝐯𝐨𝐲é 𝐮𝐧 𝐦𝐞𝐬𝐬𝐚𝐠𝐞 𝐚 𝐭𝐨𝐮𝐭 𝐥𝐞𝐬 𝐬𝐡𝐢𝐧𝐨𝐛𝐢𝐬 { é𝚌𝚛𝚒𝚟𝚟𝚎𝚣 %𝚌𝚊𝚕𝚕𝚊𝚍 𝚙𝚘𝚞𝚛 𝚌𝚘𝚗𝚝𝚊𝚗𝚌𝚝𝚎𝚣 𝚕𝚎𝚜 𝚌𝚑𝚎𝚏𝚜}",
+			notification: "━─────╮•╭─────━\n✰𝐥𝐞 𝐜𝐡𝐞𝐟 𝐝𝐮 𝐜𝐥𝐚𝐧 𝐯𝐢𝐞𝐧𝐬 𝐝'𝐞𝐧𝐯𝐨𝐲é 𝐮𝐧 𝐦𝐞𝐬𝐬𝐚𝐠𝐞 𝐚 𝐭𝐨𝐮𝐭 𝐥𝐞𝐬 𝐬𝐡𝐢𝐧𝐨𝐛𝐢𝐬 { é𝚌𝚛𝚒𝚟𝚟𝚎𝚣 %𝚌𝚊𝚕𝚕𝚊𝚍 𝚙𝚘𝚞𝚛 𝚌𝚘𝚗𝚝𝚊𝚗𝚌𝚝𝚎𝚣 𝚕𝚎𝚜 𝚌𝚑𝚎𝚏𝚜}",
 			sendingNotification: "Start sending notification from admin bot to %1 chat groups",
 			sentNotification: "✅ Sent notification to %1 groups successfully",
 			errorSendingNotification: "An error occurred while sending to %1 groups:\n%2"
@@ -43,7 +43,7 @@ module.exports = {
 		if (!args[0])
 			return message.reply(getLang("missingMessage"));
 		const formSend = {
-			body: `${getLang("notification")}\n□□□□□□□□■■■■□□■■■■\n${args.join(" ")}`,
+			body: `${getLang("notification")}\n━─────╮•╭─────━\n${args.join(" ")}`,
 			attachment: await getStreamsFromAttachment(
 				[
 					...event.attachments,
