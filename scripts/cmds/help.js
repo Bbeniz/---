@@ -3,7 +3,7 @@ const axios = require("axios");
 const path = require("path");
 const { getPrefix } = global.utils;
 const { commands, aliases } = global.GoatBot;
-const doNotDelete = "[  | 𝐌𝐀𝐃𝐀𝐑𝐀 V2 ]"; // changing this wont change the goatbot V2 of list cmd it is just a decoyy
+const doNotDelete = "[  | 𝐌𝐀𝐃𝐀𝐑𝐀 𝐔𝐂𝐇𝐈𝐇𝐀 ]"; // changing this wont change the goatbot V2 of list cmd it is just a decoyy
 
 module.exports = {
   config: {
@@ -51,7 +51,7 @@ module.exports = {
 
           const names = categories[category].commands.sort();
           for (let i = 0; i < names.length; i += 3) {
-            const cmds = names.slice(i, i + 1).map((item) => `(̅_̅(̅_̅_̅_̅̅_̅()ڪے〖 ${item} 〗`);
+            const cmds = names.slice(i, i + 1).map((item) => `(̅_̅(̅_̅_̅_̅_̅̅_̅()ڪے〖 ${item} 〗`);
             msg += `\n│ ${cmds.join(" ".repeat(Math.max(1, 10 - cmds.join("").length)))}`;
           }
 
