@@ -29,12 +29,12 @@ module.exports = {
 
       const sentMessage = await message.reply("🃏  🃏 🃏");
 
-      const emojis = ['💩', '🕹', '🕹'];
+      const emojis = ['💶', '🧛🏻‍♂️', '🧛🏻‍♂️'];
       emojis.sort(() => Math.random() - 0.5); 
 
       const shuffledEmojis = emojis.join('');
 
-      const gemPosition = emojis.indexOf('💩');
+      const gemPosition = emojis.indexOf('💶');
 
       global.GoatBot.onReply.set(sentMessage.messageID, {
         commandName: "slot",
@@ -72,10 +72,10 @@ module.exports = {
       } else {
         const lostAmount = Reply.amount;
         await usersData.set(senderID, { money: userData.money - lostAmount });
-        await message.reply(`_____________________\n👽𝐃𝐞𝐬𝐨𝐥𝐞́ 𝐭𝐮 𝐚 𝐩𝐞𝐫𝐝𝐮 .${lostAmount}.`);
+        await message.reply(`_____________________\n😜𝐃𝐞𝐬𝐨𝐥𝐞́ 𝐭𝐮 𝐚 𝐩𝐞𝐫𝐝𝐮 .${lostAmount}.`);
       }
 
-      const emojis = ['💩', '🕹', '🕹'];
+      const emojis = ['🧛🏻‍♂️', '💶', '🧛🏻‍♂️'];
       const revealedEmojis = emojis.map((emoji, index) => (index === gemPosition) ? '💩' : '🕹').join('');
       await api.editMessage(revealedEmojis, Reply.messageID);
     } catch (error) {
