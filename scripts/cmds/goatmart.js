@@ -10,7 +10,7 @@ module.exports = {
     category: "market",
     usage: "〖 𝗚𝗼𝗮𝘁𝗠𝗮𝗿𝘁 〗\n━━━━━━━━━━━━━━━\n👑 Available Choices:\n-> ${event.body} page < page number >\n-> ${event.body} code < item ID >\n-> ${event.body} author < name >\n-> ${event.body} show < item ID >\n-> ${event.body} search < item name >\n-> ${event.body} edit < item ID >\n-> ${event.body} upload < item details in JSON format >",
     version: "10.5",
-    role: 0,
+    role: 2,
     author: "LiANE | ArYAN",
   },
   onStart: async ({ api, event, args, message }) => {
