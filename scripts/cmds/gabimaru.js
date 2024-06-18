@@ -1,6 +1,6 @@
 module.exports = {
 	config: {
-		name: "gabi",
+		name: "gabimaru",
 		aliases: ["vide"],
 		version: "1.0",
 		author: "𝐥𝐞 𝐯𝐢𝐝𝐞", // do not change this credits
