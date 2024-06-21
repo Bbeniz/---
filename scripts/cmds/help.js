@@ -61,8 +61,8 @@ module.exports = {
 			pageNotFound: "Trang %1 không tồn tại"
 		},
 		en: {
-			help: "『 🕸𝐌𝐀𝐑𝐀𝐃𝐀 𝐂𝐌𝐃 𝐋𝐈𝐒𝐓 🕸』\n\n%1\n✶⊶⊷⊶⊷❍\n 𝗣𝗮𝗴𝗲 [ %2/%3 ]\n➪🕸𝐋𝐞 𝐛𝐨𝐭 𝐝𝐢𝐬𝐩𝐨𝐬𝐞 𝐚𝐜𝐭𝐮𝐞𝐥𝐥𝐞𝐦𝐞𝐧𝐭 𝐝𝐞「 %4 」𝐜𝐦𝐝𝐬 \n➪🕸 𝗧𝗬𝗣𝗘: %5𝐡𝐞𝐥𝐩 <𝐏𝐀𝐆𝐄> à 𝐥𝐚 𝐥𝐢𝐬𝐭𝐞 𝐝'𝐚𝐟𝐟𝐢𝐜𝐡𝐚𝐠𝐞 𝐝𝐞𝐬 𝐜𝐦𝐝𝐬\n➪🕸 » 𝗧𝗬𝗣𝗘: %5𝐡𝐞𝐥𝐩 + 𝐥𝐞 𝐧𝐨𝐦 𝐝𝐞 𝐥𝐚 𝐜𝐦𝐝 𝐩𝐨𝐮𝐫 𝐯𝐨𝐢𝐫 𝐜𝐞𝐬 𝐢𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧𝐬\n๑۩ ,¸¸,ø¤º°`°๑۞๑\n│ %6\n✶⊶⊷⊶⊷❍",
-			help2: "%1✶⊶⊷⊶⊷❍⊶⊷⊶⊷✶\n》🌹𝚃𝚑𝚎 𝚋𝚘𝚝 𝚑𝚊𝚜 〚%2〛 𝗖𝗠𝗗𝚜 𝚝𝚑𝚊𝚝 𝚢𝚘𝚞 𝙲𝚊𝚗 𝚄𝚜𝚎🎐\n》🌺⊰⊹ 𝗧𝗬𝗣𝗘: %3help ⊹⊱ 𝚝𝚘 𝚟𝚒𝚎𝚠 𝚍𝚎𝚝𝚊𝚒𝚕𝚜 𝚘𝚏 𝙷𝚘𝚠 𝚝𝚘 𝚞𝚜𝚎 𝚃𝚑𝚊𝚝𝚜 𝙲𝚖𝚍𝚜\n🥀 ×º°”`˜”°º× 𝐁𝐨𝐭:\n%4\n☆♬○♩●♪♪●♩○♬☆",
+			help: "『 🕸𝐌𝐀𝐑𝐀𝐃𝐀 𝐂𝐌𝐃 𝐋𝐈𝐒𝐓 🕸』\n\n%1\n✶⊶⊷⊶⊷❍\n 𝗣𝗮𝗴𝗲 [ %2/%3 ]\n➪🕸𝐋𝐞 𝐛𝐨𝐭 𝐝𝐢𝐬𝐩𝐨𝐬𝐞 𝐚𝐜𝐭𝐮𝐞𝐥𝐥𝐞𝐦𝐞𝐧𝐭 𝐝𝐞「 %4 」𝐜𝐦𝐝𝐬 \n➪🕸 𝗧𝗔𝗣𝗘: %5𝐡𝐞𝐥𝐩 <𝐏𝐀𝐆𝐄> à 𝐥𝐚 𝐥𝐢𝐬𝐭𝐞 𝐝'𝐚𝐟𝐟𝐢𝐜𝐡𝐚𝐠𝐞 𝐝𝐞𝐬 𝐜𝐦𝐝𝐬\n➪🕸 » 𝗧𝗬𝗣𝗘: %5𝐡𝐞𝐥𝐩 + 𝐥𝐞 𝐧𝐨𝐦 𝐝𝐞 𝐥𝐚 𝐜𝐦𝐝 𝐩𝐨𝐮𝐫 𝐯𝐨𝐢𝐫 𝐜𝐞𝐬 𝐢𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧𝐬\n๑۩ ,¸¸,ø¤º°`°๑۞๑\n│ %6\n✶⊶⊷⊶⊷❍",
+			help2: "%1✶⊶⊷⊶⊷❍⊶⊷⊶⊷✶\n》🌹𝚃𝚑𝚎 𝚋𝚘𝚝 𝚑𝚊𝚜 〚%2〛 𝗖𝗠𝗗𝚜 𝚝𝚑𝚊𝚝 𝚢𝚘𝚞 𝙲𝚊𝚗 𝚄𝚜𝚎🎐\n》🌺⊰⊹ 𝗧𝗔𝗣𝗘: %3help ⊹⊱ 𝚝𝚘 𝚟𝚒𝚎𝚠 𝚍𝚎𝚝𝚊𝚒𝚕𝚜 𝚘𝚏 𝙷𝚘𝚠 𝚝𝚘 𝚞𝚜𝚎 𝚃𝚑𝚊𝚝𝚜 𝙲𝚖𝚍𝚜\n🥀 ×º°”`˜”°º× 𝐁𝐨𝐭:\n%4\n☆♬○♩●♪♪●♩○♬☆",
 			commandNotFound: "𝗖𝗠𝗗 \"『%1』\" 𝙳𝚘𝚎𝚜 𝙴𝚡𝚒𝚜𝚝",
 			getInfoCommand: "╭── NAME ────✿\n %1\n├── INFO\n│ Description: %2\n│ Other names: %3\n│ Other names in your group: %4\n│ Version: %5\n│ Role: %6\n│ Time per command: %7s\n│ Author: %8\n├── Usage\n%9\n├── Notes\n│ The content inside <XXXXX> can be changed\n│ The content inside [a|b|c] is a or b or c\n╰──────❀",
 			onlyInfo: "╭── INFO ────✿\n│ Command name: %1\n│ Description: %2\n│ Other names: %3\n│ Other names in your group: %4\n│ Version: %5\n│ Role: %6\n│ Time per command: %7s\n│ Author: %8\n╰─────────────✿",
