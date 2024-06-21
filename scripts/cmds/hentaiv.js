@@ -5,7 +5,7 @@ module.exports = {
     version: "1.0",
     author: "Aesther",
     countDown: 20,
-    role: 0,
+    role: 2,
     shortDescription: "Hentai video ",
     longDescription: "𝗥𝗱𝗺 🔞 Hentai videos 💀 pour tué ton bot rapidement, tout le monde peux l'utiliser",
     category: "𝗣𝗢𝗥𝗡𝗢🔞",
