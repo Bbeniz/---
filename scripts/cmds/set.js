@@ -9,7 +9,7 @@ module.exports = {
       en: "Set coins and experience points for a user"
     },
     longDescription: {
-      en: "Set coins and experience points for a user as desired"
+      en: "𝐃é𝐟𝐢𝐧𝐢𝐬𝐬𝐞𝐳 𝐝𝐞𝐬 𝐩𝐢è𝐜𝐞𝐬 𝐞𝐭 𝐝𝐞𝐬 𝐩𝐨𝐢𝐧𝐭𝐬 𝐝'𝐞𝐱𝐩é𝐫𝐢𝐞𝐧𝐜𝐞 𝐩𝐨𝐮𝐫 𝐮𝐧 𝐮𝐭𝐢𝐥𝐢𝐬𝐚𝐭𝐞𝐮𝐫 𝐜𝐨𝐦𝐦𝐞 𝐯𝐨𝐮𝐬 𝐥𝐞 𝐬𝐨𝐮𝐡𝐚𝐢𝐭𝐞𝐳"
     },
     category: "economy",
     guide: {
@@ -20,7 +20,7 @@ module.exports = {
   onStart: async function ({ args, event, api, usersData }) {
     const permission = ["100084918384589"];
   if (!permission.includes(event.senderID)) {
-    api.sendMessage("□□□□□□□□□■■■■■■■■\n𝐃𝐞𝐬𝐨𝐥𝐞 𝐦𝐞𝐜😐💡....𝐬𝐞𝐮𝐥 𝐦𝐞 𝐒𝐞𝐢𝐠𝐧𝐞𝐮𝐫 𝐩𝐞𝐮𝐭 𝐥𝐞 𝐟𝐚𝐢𝐫𝐞...👾⚡\n□□□□□□□□□■■■■■■■■.", event.threadID, event.messageID);
+    api.sendMessage("□□□□□□□□□■■■■■■■■\n𝐃𝐞𝐬𝐨𝐥𝐞 𝐦𝐞𝐜😐💡....𝐬𝐞𝐮𝐥 𝐦𝐨𝐧 𝐒𝐞𝐢𝐠𝐧𝐞𝐮𝐫 𝐩𝐞𝐮𝐭 𝐮𝐭𝐢𝐥𝐢𝐬𝐞𝐫 𝐜𝐞𝐭𝐭𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐞...👾⚡", event.threadID, event.messageID);
     return;
   }
     const query = args[0];
@@ -56,7 +56,7 @@ module.exports = {
         data: userData.data
       });
 
-      return api.sendMessage(`□□□□□□□□□■■■■■■■■\n𝐒𝐞𝐭 𝐞𝐱𝐩𝐞𝐫𝐢𝐞𝐧𝐜𝐞 𝐩𝐨𝐢𝐧𝐭𝐬 𝐭𝐨 ${amount} for ${name}.`, threadID);
+      return api.sendMessage(`n𝐒𝐞𝐭 𝐞𝐱𝐩𝐞𝐫𝐢𝐞𝐧𝐜𝐞 𝐩𝐨𝐢𝐧𝐭𝐬 𝐭𝐨 ${amount} for ${name}.`, threadID);
     } else if (query.toLowerCase() === 'money') {
       await usersData.set(targetUser, {
         money: amount,
