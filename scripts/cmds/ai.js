@@ -18,7 +18,7 @@ async function getAIResponse(input, userId, messageID) {
  { url: 'https://ai-chat-gpt-4-lite.onrender.com/api/hercai', params: { question: input } }
  ];
 
- let response = "━━━━━━━━━━━━━ \n  ✰𝐬𝐚𝐥𝐮𝐭 𝐦𝐨𝐢 𝐜'𝐞𝐬𝐭 𝐦𝐚𝐝𝐚𝐫𝐚 𝐮𝐜𝐡𝐢𝐡𝐚 𝐭𝐮 𝐩𝐞𝐮𝐭 𝐦𝐞 𝐩𝐨𝐬𝐞𝐫 𝐭𝐚 𝐪𝐮𝐞𝐬𝐭𝐢𝐨𝐧 ☢\n━━━━━━━━━━━━━";
+ let response = "◆❯━━━━━━━▣✦▣━━━━━━━━❮◆\𝐬𝐚𝐥𝐮𝐭 𝐦𝐨𝐢 𝐜'𝐞𝐬𝐭 𝐦𝐚𝐝𝐚𝐫𝐚 𝐮𝐜𝐡𝐢𝐡𝐚 𝐭𝐮 𝐩𝐞𝐮𝐭 𝐦𝐞 𝐩𝐨𝐬𝐞𝐫 𝐭𝐚 𝐪𝐮𝐞𝐬𝐭𝐢𝐨𝐧 ☢\n◆❯━━━━━━━▣✦▣━━━━━━━━❮◆";
  let currentIndex = 0;
 
  for (let i = 0; i < services.length; i++) {
@@ -76,7 +76,7 @@ const fonts = {
  if (messageContent.startsWith("ai")) {
  const input = messageContent.replace(/^ai\s*/, "").trim();
  const { response, messageID } = await getAIResponse(input, event.senderID, message.messageID);
- message.reply(`༆𝐌𝐚𝐝𝐚𝐫𝐚 𝐮𝐜𝐡𝐢𝐡𝐚\n━━━━━━━━━━━━━\n${response}`, messageID);
+ message.reply(`n𝐌𝐀𝐃𝐀𝐑𝐀 𝐔𝐂𝐇𝐈𝐇𝐀\n◆❯━━━━━━━▣✦▣━━━━━━━━❮◆`,\n${response}`, messageID);
  }
  }
 };
