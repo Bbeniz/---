@@ -1,6 +1,6 @@
 module.exports = {
   config: {
-    name: "join",
+    name: "join2",
     aliases: ['addme', 'joinme'],
     version: "1.0",
     author: "Samir ",
