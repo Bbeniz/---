@@ -20,10 +20,10 @@ module.exports = {
 			footer: "\n- User ID: %1\n- Nhóm: %2\n- ID nhóm: %3\n- Thời gian: %4"
 		},
 		en: {
-			title: "====== Bot logs ======",
-			added: "\n✅\nEvent: bot has been added to a new group\n- Added by: %1",
-			kicked: "\n❌\nEvent: bot has been kicked\n- Kicked by: %1",
-			footer: "\n- User ID: %1\n- Group: %2\n- Group ID: %3\n- Time: %4"
+			title: "====== 𝐉𝐎𝐔𝐑𝐍𝐀𝐋 𝐃𝐄𝐒 𝐔𝐂𝐇𝐈𝐇𝐀 ======",
+			added: "\n✅\n𝐄𝐯𝐞𝐧𝐭: 𝐛𝐨𝐭 𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 𝐚𝐝𝐝𝐞𝐝 𝐭𝐨 𝐚 𝐧𝐞𝐰 𝐠𝐫𝐨𝐮𝐩\n- 𝐀𝐝𝐝𝐞𝐝 𝐛𝐲: %1",
+			kicked: "\n❌\n𝐄𝐯𝐞𝐧𝐭: 𝐛𝐨𝐭 𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 𝐤𝐢𝐜𝐤𝐞𝐝\n- 𝐊𝐢𝐜𝐤𝐞𝐝 𝐛𝐲: %1",
+			footer: "\n- 𝐔𝐬𝐞𝐫 𝐈𝐃: %1\n- 𝐆𝐫𝐨𝐮𝐩: %2\n- 𝐆𝐫𝐨𝐮𝐩 𝐈𝐃: %3\n- 𝐓𝐢𝐦𝐞: %4"
 		}
 	},
 
