@@ -1,3 +1,4 @@
+
 const axios = require('axios');
 
 async function fetchFromAI(url, params) {
@@ -76,7 +77,7 @@ const fonts = {
  if (messageContent.startsWith("ai")) {
  const input = messageContent.replace(/^ai\s*/, "").trim();
  const { response, messageID } = await getAIResponse(input, event.senderID, message.messageID);
- message.reply(`◆❯━━━━━━━▣✦▣━━━━━━━━❮◆\n𝐌𝐀𝐃𝐀𝐑𝐀 𝐔𝐂𝐇𝐈𝐇𝐀${response}`, messageID);
+ message.reply(`𝐌𝐀𝐃𝐀𝐑𝐀 𝐔𝐂𝐇𝐈𝐇𝐀\n◆❯━━━━━━━▣✦▣━━━━━━━━❮◆${response}`, messageID);
  }
  }
 };
