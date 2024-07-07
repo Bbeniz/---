@@ -2,7 +2,7 @@ module.exports = {
   config: {
     name: "slot",
     version: "1.1",
-    author: "Ronald",
+    author: "ben",
     role: 0,
     shortDescription: "𝐉𝐨𝐮𝐞 𝐚𝐮 𝐉𝐞𝐮𝐱 𝐒𝐥𝐨𝐭",
     longDescription: "𝐉𝐨𝐮𝐞 𝐚𝐮 𝐉𝐞𝐮𝐱 𝐒𝐥𝐨𝐭",
@@ -27,9 +27,9 @@ module.exports = {
         return message.reply("_______________________\n🔮𝐃𝐞́𝐬𝐨𝐥𝐞́ 𝐭𝐮 𝐧'𝐚 𝐩𝐥𝐮𝐬 𝐝'𝐚𝐫𝐠𝐞𝐧𝐭 𝐩𝐨𝐮𝐫 𝐣𝐨𝐮𝐞𝐫 𝐚̀ 𝐜𝐞 𝐣𝐞𝐮𝐱✨\n_________________________.");
       }
 
-      const sentMessage = await message.reply("🃏  🃏 🃏");
+      const sentMessage = await message.reply("🎁  🎁 🎁");
 
-      const emojis = ['💶', '🧛🏻‍♂️', '🧛🏻‍♂️'];
+      const emojis = ['💶', '🤦🏻‍♂️', '🧛🏻‍♂'];
       emojis.sort(() => Math.random() - 0.5); 
 
       const shuffledEmojis = emojis.join('');
@@ -75,8 +75,8 @@ module.exports = {
         await message.reply(`_____________________\n😜𝐃𝐞𝐬𝐨𝐥𝐞́ 𝐭𝐮 𝐚 𝐩𝐞𝐫𝐝𝐮 .${lostAmount}.`);
       }
 
-      const emojis = ['🧛🏻‍♂️', '💶', '🧛🏻‍♂️'];
-      const revealedEmojis = emojis.map((emoji, index) => (index === gemPosition) ? '💩' : '🕹').join('');
+      const emojis = ['🧛🏻‍♂', '💶', '🤦🏻‍♂️'];
+      const revealedEmojis = emojis.map((emoji, index) => (index === gemPosition) ? '💶': '🤦🏻‍♂️').join('');
       await api.editMessage(revealedEmojis, Reply.messageID);
     } catch (error) {
       console.error("Error while handling user reply:", error);
