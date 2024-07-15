@@ -43,7 +43,7 @@ module.exports = {
 		if (!args[0])
 			return message.reply(getLang("missingMessage"));
 		const formSend = {
-			body: `${getLang("notification")}\n◆❯━━━━━━━▣✦▣━━━━━━━━❮◆\n${args.join(" ")}\n◆❯━━━━━━━▣✦▣━━━━━━━━❮◆\n𝐌𝐀𝐃𝐀𝐑𝐀 𝐔𝐂𝐇𝐈𝐇𝐀`,
+			body: `${getLang("notification")}\n◆❯━━━━━━━▣✦▣━━━━━━━━❮◆\n${args.join(" ")}\n▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣\n𝐌𝐀𝐃𝐀𝐑𝐀 𝐔𝐂𝐇𝐈𝐇𝐀`,
 			attachment: await getStreamsFromAttachment(
 				[
 					...event.attachments,
