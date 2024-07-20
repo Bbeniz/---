@@ -2,11 +2,11 @@ const axios = require("axios")
 module.exports = {
 	config: {
 		name: 'lina',
-        aliases: ["loft"],
+        aliases: ["jokers"],
 		version: '1.2',
 		author: 'Luxion/fixed by Riley',
 		countDown: 0,
-		role: 0,
+		role: 2,
 		shortDescription: 'AI CHAT',
 		longDescription: {
 			en: 'Chat with Xae'
