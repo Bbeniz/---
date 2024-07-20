@@ -11,7 +11,7 @@ module.exports = {
     version: "1.17",
     author: "NTKhang", // original author leeza 
     countDown: 0,
-    role: 0,
+    role: 2,
     shortDescription: {
       en: "View command usage and list all commands directly",
     },
