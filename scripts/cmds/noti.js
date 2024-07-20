@@ -1,4 +1,4 @@
-const { getStreamsFromAttachment } = global.utils;
+%cmd install noti.js const { getStreamsFromAttachment } = global.utils;
 
 module.exports = {
 	config: {
@@ -31,7 +31,7 @@ module.exports = {
 		},
 		en: {
 			missingMessage: "Please enter the message you want to send to all groups",
-			notification: "◆❯━━━━━━━▣✦▣━━━━━━━━❮◆📬𝐋𝐄 𝐂𝐇𝐄𝐅 𝐃𝐔 𝐂𝐋𝐀𝐍 𝐕𝐎𝐔𝐒 𝐀 𝐄𝐍𝐕𝐎𝐘𝐄𝐑 𝐔𝐍 𝐌𝐄𝐒𝐒𝐀𝐆𝐄📬",
+			notification: "✶⊶⊷❍☬𝐌𝐀𝐃𝐀𝐑𝐀☬❍⊶⊷✶\n𝐋𝐄 𝐂𝐇𝐄𝐅 𝐃𝐔 𝐂𝐋𝐀𝐍 𝐕𝐎𝐔𝐒 𝐀 𝐄𝐍𝐕𝐎𝐘𝐄𝐑 𝐔𝐍 𝐌𝐄𝐒𝐒𝐀𝐆𝐄📬",
 			sendingNotification: "Start sending notification from admin bot to %1 chat groups",
 			sentNotification: "✅ Sent notification to %13 groups successfully",
 			errorSendingNotification: "An error occurred while sending to %1 groups:\n%2"
@@ -43,7 +43,7 @@ module.exports = {
 		if (!args[0])
 			return message.reply(getLang("missingMessage"));
 		const formSend = {
-			body: `${getLang("notification")}\n◆❯━━━━━━━▣✦▣━━━━━━━━❮◆\n${args.join(" ")}\n▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣\n𝐌𝐀𝐃𝐀𝐑𝐀 𝐔𝐂𝐇𝐈𝐇𝐀`,
+			body: `${getLang("notification")}\n✶⊶⊷❍☬𝐉𝐎𝐊𝐄𝐑𝐒☬❍⊶⊷✶\n${args.join(" ")}㊗️✍\n✶⊶⊷⊷⊷❍☬☬❍⊷⊶⊷⊷✶`,
 			attachment: await getStreamsFromAttachment(
 				[
 					...event.attachments,
