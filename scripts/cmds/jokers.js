@@ -95,7 +95,7 @@ module.exports = {
             try {
                 const { response, messageID } = await getAIResponse(input, event.senderID, event.messageID);
                 lastResponseMessageID = messageID;
-                api.sendMessage(`🃏𝐉𝐎𝐊𝐄𝐑𝐒 𝐑𝐄𝐏𝐎𝐍𝐒𝐄🃏\n✶⊶⊷❍☬𝐌𝐀𝐃𝐀𝐑𝐀☬❍⊶⊷✶\n🃏 ${response} ㊙✍\n✶⊶⊷❍☬𝐉𝐎𝐊𝐄𝐑𝐒☬❍⊶⊷✶`, event.threadID, messageID);
+                api.sendMessage(`✶⊶⊷❍☬𝐌𝐀𝐃𝐀𝐑𝐀☬❍⊶⊷✶\n🃏 ${response} ㊙✍\n✶⊶⊷❍☬𝐉𝐎𝐊𝐄𝐑𝐒☬❍⊶⊷✶`, event.threadID, messageID);
             } catch (error) {
                 console.error("Error in onChat:", error.message);
                 api.sendMessage("An error occurred while processing your request.", event.threadID);
