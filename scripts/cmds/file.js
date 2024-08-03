@@ -17,7 +17,7 @@ module.exports = {
     const permission = ["", "",
 "100084918384589"];
     if (!permission.includes(event.senderID)) {
-      return api.sendMessage("___________________________\n𝙴𝚂-𝚃𝚄 𝚅𝚁𝙰𝙸𝙼𝙴𝙽𝚃 𝚂𝚄𝚁 𝙳𝙴 𝚃𝙾𝙼𝙱𝙴𝚁 𝙳𝙰𝙽𝚂 𝙻𝙴 𝚅𝙸𝙳𝙴 𝙰𝙱𝚂𝙾𝙻𝚄 🤦🏻‍", event.threadID, event.messageID);
+      return api.sendMessage("___________________________\n🂱𝙴𝚂-𝚃𝚄 𝚅𝚁𝙰𝙸𝙼𝙴𝙽𝚃 𝚂𝚄𝚁 𝙳𝙴 𝚃𝙾𝙼𝙱𝙴𝚁 𝙳𝙰𝙽𝚂 𝙻𝙴 𝚅𝙸𝙳𝙴 𝙰𝙱𝚂𝙾𝙻𝚄 🤦🏻‍✍︎", event.threadID, event.messageID);
     }
     
     const fileName = args[0];
