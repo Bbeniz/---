@@ -61,8 +61,8 @@ module.exports = {
       pageNotFound: "Trang %1 không tồn tại"
     },
     en: {
-      help: "✶⊶⊷❍☬𝐉𝐎𝐊𝐄𝐑𝐒☬❍⊶⊷✶\n\n%1\n\n✶⊶⊷❍☬𝐌𝐀𝐃𝐀𝐑𝐀☬❍⊶⊷✶\n\n 𝗣𝗮𝗴𝗲 [ %2/%3 ]\n❍➭🌲 𝗷'𝗮𝗶 𝗮𝗰𝘁𝘂𝗲𝗹𝗹𝗲𝗺𝗲𝗻𝘁「 %4 」𝗖𝗠𝗗s \n❍➭🌲 𝗧𝗮𝗽𝗲: %5help <𝙿𝙰𝙶𝙴> 𝗽𝗼𝘂𝗿 𝗲𝗻 𝘀𝗮𝘃𝗼𝗶𝗿 𝗽𝗹𝘂𝘀\n❍➭ 🌲 » 𝗧𝗮𝗽𝗲: %5help 𝗽𝗼𝘂𝗿 𝘃𝗼𝗶𝗿 𝗹𝗲𝘀 𝗱𝗮𝘁𝗮𝗶𝗹𝘀 𝗱'𝘂𝘁𝗶𝗹𝗶𝘀𝗮𝘁𝗶𝗼𝗻 𝗱𝗲 𝗺𝗲𝘀 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝗲𝘀 %6\n\n🃏⊶⊷❍☬𝐉𝐎𝐊𝐄𝐑𝐒☬❍⊶⊷🃏\n\n",
-      help2: "%1\n❍➭🥀𝗹𝗲 𝗯𝗼𝘁 𝗮〚%2〛𝗖𝗠𝗗𝚜 𝘂𝘁𝗶𝗹𝗶𝘀𝗮𝗯𝗹𝗲𝘀\n❍➭🥀☆⊹ 𝗧𝗮𝗽𝗲: %3help ⊹☆ 𝗽𝗼𝘂𝗿 𝘃𝗼𝗶𝗿 𝗹𝗮 𝘁𝗼𝘁𝗮𝗹𝗶𝘁𝗲 𝗱𝗲 𝗺𝗲𝘀 𝗰𝗺𝗱\n ━━━━━━━━━━━━:\n%4\n\n🃏⊶⊷❍☬𝐉𝐎𝐊𝐄𝐑𝐒☬❍⊶⊷🃏\n\n",
+      help: "✶⊶⊷❍☬𝐉𝐎𝐊𝐄𝐑𝐒☬❍⊶⊷✶\n\n%1\n\n✶⊶⊷❍☬𝐌𝐀𝐃𝐀𝐑𝐀☬❍⊶⊷✶\n\n 𝗣𝗮𝗴𝗲 [ %2/%3 ] ✍︎\n❍➭🌲 𝗷'𝗮𝗶 𝗮𝗰𝘁𝘂𝗲𝗹𝗹𝗲𝗺𝗲𝗻𝘁「 %4 」𝗖𝗠𝗗𝗦✍︎ \n❍➭🌲 𝗧𝗮𝗽𝗲: %5help <𝙿𝙰𝙶𝙴> 𝗽𝗼𝘂𝗿 𝗲𝗻 𝘀𝗮𝘃𝗼𝗶𝗿 𝗽𝗹𝘂𝘀 ✍︎\n❍➭ 🌲» 𝗧𝗮𝗽𝗲: %5help 𝗽𝗼𝘂𝗿 𝘃𝗼𝗶𝗿 𝗹𝗲𝘀 𝗱𝗮𝘁𝗮𝗶𝗹𝘀 𝗱'𝘂𝘁𝗶𝗹𝗶𝘀𝗮𝘁𝗶𝗼𝗻 𝗱𝗲 𝗺𝗲𝘀 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝗲𝘀 %6✍︎\n\n🂱⊶⊷❍☬𝐉𝐎𝐊𝐄𝐑𝐒☬❍⊶⊷🂱\n\n",
+      help2: "%1\n❍➭🥀𝗹𝗲 𝗯𝗼𝘁 𝗮〚%2〛𝗖𝗠𝗗𝚜 𝘂𝘁𝗶𝗹𝗶𝘀𝗮𝗯𝗹𝗲𝘀 ✍︎\n❍➭🥀☆⊹ 𝗧𝗮𝗽𝗲: %3help ⊹☆ 𝗽𝗼𝘂𝗿 𝘃𝗼𝗶𝗿 𝗹𝗮 𝘁𝗼𝘁𝗮𝗹𝗶𝘁𝗲 𝗱𝗲 𝗺𝗲𝘀 𝗰𝗺𝗱 ✍︎\n ━━━━━━━━━━━━:\n%4\n\n🂱⊶⊷❍☬𝐉𝐎𝐊𝐄𝐑𝐒☬❍⊶⊷🂱\n\n",
       commandNotFound: "𝗖𝗠𝗗 \"『%1』\" 𝗻'𝗲𝘅𝗶𝘀𝘁𝗲 𝗽𝗮𝘀",
       getInfoCommand: "╭── NAME ────✿\n %1\n├── INFO\n│ Description: %2\n│ Other names: %3\n│ Other names in your group: %4\n│ Version: %5\n│ Role: %6\n│ Time per command: %7s\n│ Author: %8\n├── Usage\n%9\n├── Notes\n│ The content inside <XXXXX> can be changed\n│ The content inside [a|b|c] is a or b or c\n╰──────❀",
       onlyInfo: "╭── INFO ────✿\n│ Command name: %1\n│ Description: %2\n│ Other names: %3\n│ Other names in your group: %4\n│ Version: %5\n│ Role: %6\n│ Time per command: %7s\n│ Author: %8\n╰─────────────✿",
@@ -113,7 +113,7 @@ module.exports = {
           else if (value.config.shortDescription)
             shortDescription = checkLangObject(value.config.shortDescription, langCode);
           if (shortDescription)
-            describe += `:\n ❍➭  ${cropContent(shortDescription.charAt(0).toUpperCase() + shortDescription.slice(1))}`;
+            describe += `:\n❍➭ ${cropContent(shortDescription.charAt(0).toUpperCase() + shortDescription.slice(1))}`;
           arrayInfo.push({
             data: describe,
             priority: value.priority || 0
@@ -128,7 +128,7 @@ module.exports = {
 
         const returnArray = allPage[page - 1] || [];
         const startNumber = (page - 1) * numberOfOnePage + 1;
-        msg += (returnArray || []).reduce((text, item, index) => text += `❍➭ ${index + startNumber}${index + startNumber < 10 ? " " : ""}.⪫☘─❀┉┉🧫[${item.data}]\n`, '').slice(0, -1);
+        msg += (returnArray || []).reduce((text, item, index) => text += `❍➭ ${index + startNumber}${index + startNumber < 10 ? " " : ""}.⪫☘─❀┉┉🧫[${item.data}]✍︎\n`, '').slice(0, -1);
         await message.reply(getLang("help", msg, page, totalPage, commands.size, prefix, doNotDelete));
       }
       else if (sortHelp == "category") {
@@ -150,7 +150,7 @@ module.exports = {
   }
 
   for (const [category, commands] of categoryCommands) {
-    msg += `》☘🧫─➬[${category}]┉🚿\n▣「${commands.join(" ")}」\n\n`;
+    msg += `》☘🧫─➬[${category}]┉🚿\n▣「${commands.join(" ")}」✍︎\n\n`;
   }
 
   message.reply(getLang("help2", msg, commands.size, prefix, doNotDelete));
