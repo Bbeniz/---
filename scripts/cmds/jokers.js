@@ -1,106 +1,82 @@
 const axios = require('axios');
 
-let lastResponseMessageID = null;
-
-async function handleCommand(api, event, args, message) {
-    try {
-        const question = args.join(" ").trim();
-
-        if (!question) {
-            return message.reply("Please provide a question to get an answer.");
-        }
-
-        const { response, messageID } = await getAIResponse(question, event.senderID, event.messageID);
-        lastResponseMessageID = messageID;
-
-        api.sendMessage(` \n✶⊶⊶⊷⊶⊷❍☬𝐉𝐎𝐊𝐄𝐑𝐒☬❍⊶⊷⊶⊶⊷✶\n🃏${response}\n✶⊶⊶⊷⊶⊷❍☬𝐌𝐀𝐃𝐀𝐑𝐀☬❍⊶⊷⊶⊶⊷✶`, event.threadID, messageID);
-    } catch (error) {
-        console.error("Error in handleCommand:", error.message);
-        message.reply("An error occurred while processing your request.");
-    }
-}
-
-async function getAnswerFromAI(question) {
-    try {
-        const services = [
-            { url: 'https://markdevs-last-api.onrender.com/gpt4', params: { prompt: question, uid: 'your-uid-here' } },
-            { url: 'http://markdevs-last-api.onrender.com/api/v2/gpt4', params: { query: question } },
-            { url: 'https://markdevs-last-api.onrender.com/api/v3/gpt4', params: { ask: question } }
-        ];
-
-        for (const service of services) {
-            const data = await fetchFromAI(service.url, service.params);
-            if (data) return data;
-        }
-
-        throw new Error("No valid response from any AI service");
-    } catch (error) {
-        console.error("Error in getAnswerFromAI:", error.message);
-        throw new Error("Failed to get AI response");
-    }
-}
-
 async function fetchFromAI(url, params) {
-    try {
-        const { data } = await axios.get(url, { params });
-        if (data && (data.gpt4 || data.reply || data.response || data.answer || data.message)) {
-            const response = data.gpt4 || data.reply || data.response || data.answer || data.message;
-            console.log("AI Response:", response);
-            return response;
-        } else {
-            throw new Error("No valid response from AI");
-        }
-    } catch (error) {
-        console.error("Network Error:", error.message);
-        return null;
-    }
+ try {
+ const response = await axios.get(url, { params });
+ return response.data;
+ } catch (error) {
+ console.error(error);
+ return null;
+ }
 }
 
 async function getAIResponse(input, userId, messageID) {
-    const query = input.trim() || "hi";
-    try {
-        const response = await getAnswerFromAI(query);
-        return { response, messageID };
-    } catch (error) {
-        console.error("Error in getAIResponse:", error.message);
-        throw error;
-    }
+ const services = [
+ { url: 'https://ai-tools.replit.app/gpt', params: { prompt: input, uid: userId } },
+ { url: 'https://openaikey-x20f.onrender.com/api', params: { prompt: input } },
+ { url: 'http://fi1.bot-hosting.net:6518/gpt', params: { query: input } },
+ { url: 'https://ai-chat-gpt-4-lite.onrender.com/api/hercai', params: { question: input } }
+ ];
+
+ let response = "𝒀𝑶 𝑴𝑶𝑹𝑻𝑬𝑳 𝑪'𝑬𝑺𝑻 𝑴𝑨𝑫𝑨𝑹𝑨 𝑼𝑪𝑯𝑰𝑯𝑨 𝑸𝑼𝑰 𝑻𝑬 𝑷𝑨𝑹𝑳𝑬 𝑨𝑳𝑶𝑹𝑺 𝑷𝑶𝑺𝑬 𝑻𝑨 𝑸𝑼𝑬𝑺𝑻𝑰𝑶𝑵 𝑽𝑰𝑻𝑬";
+ let currentIndex = 0;
+
+ for (let i = 0; i < services.length; i++) {
+ const service = services[currentIndex];
+ const data = await fetchFromAI(service.url, service.params);
+ if (data && (data.gpt4 || data.reply || data.response)) {
+ response = data.gpt4 || data.reply || data.response;
+ break;
+ }
+ currentIndex = (currentIndex + 1) % services.length; // Move to the next service in the cycle
+ }
+
+ return { response, messageID };
 }
 
 module.exports = {
-    config: {
-        name: 'jokers',
-        author: 'coffee',
-        role: 0,
-        category: 'ai',
-        shortDescription: 'AI to answer any question',
-    },
-    onStart: async function ({ api, event, args }) {
-        const input = args.join(' ').trim();
-        try {
-            const { response, messageID } = await getAIResponse(input, event.senderID, event.messageID);
-            lastResponseMessageID = messageID;
-            api.sendMessage(`✶⊶⊶⊷⊶⊷❍☬𝐉𝐎𝐊𝐄𝐑𝐒☬❍⊶⊷⊶⊶⊷✶\𝐧🃏${response}\n✶⊶⊶⊷⊶⊷❍☬𝐌𝐀𝐃𝐀𝐑𝐀☬❍⊶⊷⊶⊶⊷✶`, event.threadID, messageID);
-        } catch (error) {
-            console.error("Error in onStart:", error.message);
-            api.sendMessage("An error occurred while processing your request.", event.threadID);
-        }
-    },
-    onChat: async function ({ event, message, api }) {
-        const messageContent = event.body.trim().toLowerCase();
+ config: {
+ name: 'jokers',
+ author: 'Arn',
+ role: 0,
+ category: 'jokers',
+ shortDescription: 'ai to ask anything',
+ },
+ onStart: async function ({ api, event, arns }) {
+ const input = args.join(' ').trim();
+ if (!input) {
+ api.sendMessage(``, event.threadID, event.messageID);
+ return;
+ }
 
-        // Check if the message is a reply to the bot's message or starts with "ai"
-        if ((event.messageReply && event.messageReply.senderID === api.getCurrentUserID()) || (messageContent.startsWith("ai") && event.senderID !== api.getCurrentUserID())) {
-            const input = messageContent.replace(/^ai\s*/, "").trim();
-            try {
-                const { response, messageID } = await getAIResponse(input, event.senderID, event.messageID);
-                lastResponseMessageID = messageID;
-                api.sendMessage(`✶⊶⊷❍☬𝐌𝐀𝐃𝐀𝐑𝐀☬❍⊶⊷✶\n🃏 ${response} ㊙✍\n✶⊶⊷❍☬𝐉𝐎𝐊𝐄𝐑𝐒☬❍⊶⊷✶`, event.threadID, messageID);
-            } catch (error) {
-                console.error("Error in onChat:", error.message);
-                api.sendMessage("An error occurred while processing your request.", event.threadID);
-            }
-        }
-    },
-    handleCommand // Export the handleCommand function for command-based interactions
+const fonts = {
+
+ mathsans: {
+
+ 𝗮: "𝗮", 𝗯: "𝗯", 𝗰: "𝗰", 𝗱: "𝗱", 𝗲: "𝗲", f: "𝗳", 𝗴: "𝗴", 𝗵: "𝗵", 𝗶: "𝗶",
+
+ 𝗝: "𝗷", 𝗸: "𝗸", 𝗹: "𝗹", 𝗺: "𝗺", 𝘀: "𝗻", 𝘀: "𝗼", 𝘀: "𝗽", q: "𝗾", r: "𝗿",
+
+ 𝘀: "𝘀", 𝘁: "𝘁", 𝘂: "𝘂", 𝘃: "𝘃", 𝘄: "𝘄", 𝘅: "𝘅", 𝘆: "𝘆", 𝘇: "𝘇",
+
+ 𝗔: "𝗔", 𝗕: "𝗕", 𝗖: "𝗖", 𝗗: "𝗗", 𝗘: "𝗘", 𝗙: "𝗙", 𝗚: "𝗚", 𝗛: "𝗛", 𝗜: "𝗜",
+
+ 𝗝: "𝗝", 𝗞: "𝗞", 𝗟: "𝗟", 𝗠: "𝗠", 𝗡: "𝗡", 𝗢: "𝗢", 𝗣: "𝗣", 𝗤: "𝗦", 𝗥: "𝗥",
+
+ 𝗦: "𝗦", 𝗧: "𝗧", 𝗨: "𝗨", 𝗩: "𝗩", 𝗪: "𝗪", 𝗫: "𝗫", 𝗬: "𝗬", 𝗭: "𝗭",
+ }
 };
+
+ 
+ const { response, messageID } = await getAIResponse(input, event.senderID, event.messageID);
+ api.sendMessage(` ${response} `, event.threadID, messageID);
+ },
+ onChat: async function ({ event, message }) {
+ const messageContent = event.body.trim().toLowerCase();
+ if (messageContent.startsWith("ai")) {
+ const input = messageContent.replace(/^ai\s*/, "").trim();
+ const { response, messageID } = await getAIResponse(input, event.senderID, message.messageID);
+ message.reply(`🂱⊶⊷❍☬𝐉𝐎𝐊𝐄𝐑𝐒☬❍⊶⊷🂱\n\n🂱 ${response}  ✍︎\n✇⊶⊷❍☬𝐌𝐀𝐃𝐀𝐑𝐀☬❍⊶⊷✇`, messageID);
+ }
+ }
+ }
