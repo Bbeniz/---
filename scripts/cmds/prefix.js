@@ -45,7 +45,7 @@ module.exports = {
 			confirmThisThread: "Please react to this message to confirm change prefix in your box chat",
 			successGlobal: "Changed prefix of system bot to: %1",
 			successThisThread: "Changed prefix in your box chat to: %1",
-			myPrefix: "۞ 𝐌𝐀𝐃𝐀𝐑𝐀 𝐔𝐂𝐇𝐈𝐇𝐀 ✇  \━━━━━━━━━━━━━━━\ 𝕸𝖄 𝕻𝕽𝕰𝕱𝕴𝖃 ☞︎︎︎{%1}☜︎︎︎\n\n𝐓𝐇𝐄 𝐏𝐑𝐄𝐅𝐈𝐗 𝐎𝐅 𝐆𝐑𝐎𝐔𝐏 ☞︎︎︎{%2}☜︎︎︎\n━━━━━━━━━━━━━━━━\n ➪ 𝚙𝚘𝚞𝚛 𝚟𝚘𝚒𝚛 𝚕𝚊 𝚕𝚒𝚜𝚝𝚎 𝚍𝚎 𝚌𝚖𝚍 é𝚌𝚛𝚒𝚟𝚎𝚣 %𝚑𝚎𝚕𝚙\n\n ━━━━━━━━━━━ ✯____◇◥✇◣, ,◢✇◤◇____✯"
+			myPrefix: "۞ 𝐌𝐀𝐃𝐀𝐑𝐀 𝐔𝐂𝐇𝐈𝐇𝐀 ✇  \━━━━━━━━━━━━━━━━━━\ 𝕸𝖄 𝕻𝕽𝕰𝕱𝕴𝖃 ☞︎︎︎{%1}☜︎︎︎\n\n𝐓𝐇𝐄 𝐏𝐑𝐄𝐅𝐈𝐗 𝐎𝐅 𝐆𝐑𝐎𝐔𝐏 ☞︎︎︎{%2}☜︎︎︎\n━━━━━━━━━━━━━━━━\n ➪ 𝚙𝚘𝚞𝚛 𝚟𝚘𝚒𝚛 𝚕𝚊 𝚕𝚒𝚜𝚝𝚎 𝚍𝚎 𝚌𝚖𝚍 é𝚌𝚛𝚒𝚟𝚎𝚣 %𝚑𝚎𝚕𝚙✍︎\n\n ━━━━━━━━━━━━━━━━━━━━\n 🂱.....〖◥✇◣, ,◢✇◤〗.....🂱"
 		}
 	},
 
